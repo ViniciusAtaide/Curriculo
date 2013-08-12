@@ -1,0 +1,132 @@
+/* Faz o corpo ficar sem padding ou margin */
+html, body {
+  margin: 0;
+  height:98%;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+a {
+  color: dodgerblue;
+  text-decoration: none;
+  font-weight: 100;
+}
+a:before, a:after {
+  content: ' ';
+  width: 10px;
+}
+/* Faz com que o corpo puxe o footer até embaixo */
+.wraper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /*valor negativo com o valor da altura do footer*/
+}
+@media (max-width: 784px)  {
+  .nav * {
+    display: none;
+  }
+  .selector {
+    display: none !important;
+  }
+}
+
+
+
+/*Altura do footer*/
+.push .footer {
+  height:60px;
+}
+.footer {
+  background-color: #f5f5f5;
+}
+
+.local {
+  font-size: 20px;
+}
+.corpo {
+  padding: 5px 0 10px 0;
+}
+h1, h2, h3, h4 {
+  font-weight: 100;
+}
+.header {
+  display: block;
+  min-height: 30px;
+  background-color: #454D5E;
+  background-image: linear-gradient(to bottom, #222222, #111111);
+  background-repeat: repeat-x;
+  height: 39px;
+  border-bottom: 4px solid deepskyblue;
+}
+.selector {
+  width: 62px;
+  height: 4px;
+  position: absolute;
+  display: block;
+  top: 39px;
+  background: #ffff00;
+}
+.nav {
+  display: block;
+  float: left;
+  padding: 10px;
+  width: 50%;
+  margin: 0;
+}
+.social {
+  float: right;
+  display: block;
+  padding: 10px;
+}
+.face {
+  display: block;
+  float: left;
+  background: url("../images/face.jpg");
+  width: 22px;
+  height: 22px;
+  margin-right: 10px;
+}
+.twitter {
+  display: block;
+  float: left;
+  background: url("../images/twitter.jpg");
+  width: 22px;
+  height: 22px;
+  margin-right: 10px;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+  display: inline;
+}
+.nav li {
+  margin-right: 30px;
+}
+.nav li:nth-child(3) {
+  margin-right: 0;
+}
+
+.nav li a {
+  font-size: 16px;
+  text-decoration: none;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  color: #DDDDC5;
+  padding-bottom: 11px;
+  border-bottom: 4px solid rgba(0,0,0,0);
+  transition: opacity 1s linear;
+}
+.nav li a:hover, .active {
+  color: deepskyblue !important;
+}
+.hero-unit {
+  margin-bottom: 30px;
+  padding-bottom: 80px;
+  padding-top: 60px;
+  padding: 60px 0 80px 0;
+  background-color: #eeeeee;
+}
+.muted {
+  color: #999999;
+}

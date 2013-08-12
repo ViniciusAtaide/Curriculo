@@ -1,0 +1,17 @@
+<link rel="stylesheet" href="styles/portfolio.css"/>
+
+<div class="wrapper">
+    <div id="portfolio">
+        <section class="site">
+            <article class="preview" ng-repeat="site in sites">
+                <h4>{{ site.titulo }}</h4>
+                <a href="{{ site.url }}">
+                    <img src="{{ site.src }}"/>
+                </a>
+                <footer>
+                    {{ site.footer }}
+                </footer>
+            </article>
+        </section>
+    </div>
+</div>
