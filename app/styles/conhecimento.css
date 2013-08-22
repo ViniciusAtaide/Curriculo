@@ -1,0 +1,29 @@
+.tabela {
+  max-width: 100%;
+  background-color: transparent;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.tabela th,
+.tabela td {
+  padding: 8px;
+  line-height: 20px;
+  text-align: left;
+  vertical-align: top;
+  border-top: 1px solid #dddddd;
+}
+
+.tabela th {
+  font-weight: bold;
+}
+
+.tabela th {
+  vertical-align: bottom;
+}
+.tabela td.span6,
+.tabela th.span6 {
+  float: none;
+  width: 444px;
+  margin-left: 0;
+}

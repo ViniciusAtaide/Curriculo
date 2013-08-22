@@ -1,0 +1,296 @@
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+
+.center {
+  margin: 0 auto;
+  width: 1072px;
+}
+
+/* Faz o corpo ficar sem padding ou margin */
+html, body {
+  margin: 0;
+  height:98%;
+  zoom: 1;  
+}
+
+body {
+  font-family: "Open Sans";
+  font-weight: 100;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+a {
+  color: dodgerblue;
+  text-decoration: none;
+  font-weight: 100;
+}
+a:hover {
+  text-decoration: underline;
+  color: blue;
+}
+.tabela {
+  width: 100%;
+}
+
+.local {
+  font-size: 20px;
+}
+.corpo {
+  padding: 5px 0 10px 0;
+  min-height: 414px;
+}
+h1, h2, h3, h4 {
+  font-weight: 100;
+}
+.header {
+  display: block;
+  min-height: 30px;
+  background-color: #454D5E;
+  background-image: linear-gradient(to bottom, #222222, #111111);
+  background-repeat: repeat-x;
+  height: 39px;
+  border-bottom: 4px solid #0b97c4;
+}
+.selector {  
+  height: 4px;
+  position: absolute;
+  display: block;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+  top: 39px;
+  background: deepskyblue;
+}
+.nav {
+  display: block;
+  float: left;
+  padding: 10px;
+  white-space: nowrap;
+  margin: 0;
+}
+.menu {
+  display: none;
+}
+.down {
+  background: url("../images/down.png");
+  width: 11px;
+  height: 6px;
+  display: block;
+  float: right;
+  margin-top: 10px;
+  margin-left: 2px;
+}
+.social {
+  float: right;
+  display: block;
+  padding: 10px;
+}
+.face {
+  display: block;
+  float: left;
+  background: url("../images/face.jpg");
+  width: 22px;
+  height: 22px;
+  margin-right: 10px;
+}
+.twitter {
+  display: block;
+  float: left;
+  background: url("../images/twitter.jpg");
+  width: 22px;
+  height: 22px;
+  margin-right: 10px;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+  display: inline-block;
+}
+.lista-comum {
+  padding: 10px 0;
+}
+.lista-comum li {
+  margin: 10px 0;
+  display: block;
+}
+.nav li {
+  margin-right: 30px;
+}
+.nav li:nth-child(3) {
+  margin-right: 0;
+}
+
+.nav li a {
+  font-size: 16px;
+  text-decoration: none;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  color: #DDDDC5;
+  transition: opacity 1s linear;
+  -webkit-transition: opacity 1s linear;    
+     -moz-transition: opacity 1s linear;    
+      -ms-transition: opacity 1s linear;    
+       -o-transition: opacity 1s linear;    
+          transition: opacity 1s linear;    
+}
+.nav li a:hover, .active {
+  color: deepskyblue !important;
+}
+.hero-unit {
+  margin-bottom: 30px;
+  padding: 20px 0;
+  background-color: #eeeeee;
+  min-height: 500px ;
+}
+.muted {
+  color: #999999;
+}
+.footer {
+  text-align: center;
+  position: relative;
+  display: block;
+  background: rgba(255, 255, 255, 0);
+  margin-top: -30px;
+  height: 30px;
+  clear: both;
+}
+
+
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+  .preview {
+    width: 100%;
+    padding-bottom: 10%;
+  }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (min-width : 321px) {
+  /* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+  .nav {
+    float: none;
+    background: black;
+    top: 43px;
+    width: 100%;
+    padding: 5px 0;
+    display: none;
+    position: absolute;
+    z-index: 1;
+    border-bottom: 2px solid deepskyblue;
+  }
+  .nav li {
+    display: block;
+    padding: 15px 10px;
+  }
+  .nav li a {
+    padding-right: 100%;
+  }
+  .selector {
+    display: none;
+  }
+  .menu {
+    margin: 10px 0 0 30px;
+    display: block;
+    float: left;
+  }
+  .center {
+    width: 100%;
+  }
+  .hero-unit * {
+    padding: 10px 0 0 0;
+    margin: 0;
+  }
+
+  .active {
+    opacity: 1;
+    display: block;
+  }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+  /* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+  /* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+  .center {
+    width: 100%;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+  /* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen
+and (min-width : 1824px) {
+  /* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+  /* Styles */
+}
+
+.slide.ng-enter,
+.slide.ng-leave {
+  transition: 1.5s ease all;
+  position: absolute;
+}
+
+.slide.ng-enter {
+  left: -200%;
+  width: 100%;
+}
+.slide.ng-leave {
+  left: 0;
+}
+
+.slide.ng-leave.ng-leave-active {
+  left: 200%;
+}
+.slide.ng-enter-active {
+  width: 100%;
+  left: 0;
+}
+@media (max-width: 980px) {
+  .center {
+    width: 100%;
+  }
+}

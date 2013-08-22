@@ -1,0 +1,134 @@
+.wrapper {
+  overflow: hidden;
+}
+
+.preview footer {
+  position: absolute;
+  font-weight: 800;
+  background: rgba(0,0,0,.6);
+  color: white;
+  display: block;
+  text-align: center;
+  right: 0;
+  overflow: hidden;
+  bottom: 0;
+  height: 0;
+  transition: all .5s ease;
+}
+.table {
+  display: table;
+  height: 100%;
+}
+
+.preview {  
+  display: inline-block;  
+  margin: 0 0 80px 3.3%;
+  min-height: 100%;
+  position: relative;
+  max-width: 100%;  
+  height: auto;
+}
+.preview h2 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  text-align: center;
+}
+.preview img {
+  width: inherit;
+  height: inherit;
+}
+
+.preview:hover footer {
+  height: 100%;
+}
+
+.v_middle {  
+  display: table-cell;  
+  vertical-align: middle;
+}
+
+@media only screen and (min-width : 321px) {
+  /* Styles */
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen and (max-width : 320px) {
+  .preview {
+    margin: 0 0 80px 0;
+    width: 100%;
+  }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  .preview {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+/* iPads (landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+  .preview {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+/* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+  .center {
+    width: 100%;
+  }
+  .preview {
+    width: 100%;
+  }
+}
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+  /* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+  /* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
+  /* Styles */
+}
+@media (max-width: 1072px) {
+  .wrapper {
+    width: 100% !important;
+  }
+  .preview {
+    width: 44%;
+    margin-right: 15px;
+    padding: 0;
+  }
+  .preview:nth-child(2n) {
+    margin-right: 0;
+  }
+  .preview a {
+    width: 100%;
+  }
+  .preview img {
+    max-width: 100%;
+    height: auto;
+    width: 100% !important;
+  }
+  .corpo {
+    width: 100% !important;
+  }
+  .center {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .preview {
+    width: 100%;
+    margin: 0;
+  }
+}
