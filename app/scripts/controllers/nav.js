@@ -11,15 +11,12 @@ angular.module('CurriculoApp')
     };
     $scope.select = function (i) {
 
-      setTimeout(function() {
+        var $li = $('.nav > li');
 
-      });
+        $scope.larg = $li.eq(i).width();
 
-      var $li = $('.nav > li');
+        $scope.left = $li.eq(i).offset().left;
 
-      $scope.larg = $li.eq(i).width();
-
-      $scope.left = $li.eq(i).offset().left;
 
     };
     $scope.selectActive = function() {
